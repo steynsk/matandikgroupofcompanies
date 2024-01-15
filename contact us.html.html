@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MATANDIKA & COMPANY LAWYERS COMMISIONERS OF OATHS CONVENERS</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+  </head>
+<body>
+    <section class="header">
+      <nav>
+        <a href="index.html"><img src=""></a>
+        <div class="nav-links" id="navlinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html.html">About Us</a></li>
+                <li><a href="our-services.html.html">Our Services</a></li> <!-- This is the current page -->
+                <li><a href="our location.html.html">Our Location</a></li>
+                <li><a href="contact us.html.html">Contact us</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1 class="section-header">Contact Us</h1>
+    </section>
+
+<!-- Contact Section -->
+<section class="contact">
+
+  <p class="contact-description">Connect with Us Today for Exceptional Legal Services</p>
+  <div class="contact-icons">
+      <div class="contact-icon">
+          <a href="tel:+265992031955" class="click-me">Click Me </a></p>
+              <i class="fa fa-phone shake"></i>
+              <p>Phone: +265 992 03 19 55</p>
+          </a>
+      </div>
+      <div class="contact-icon">
+          <a href="mailto:mphatsomatandika.com"class="click-me">Click Me </a></p>
+          
+              <i class="fa fa-envelope email-animation"></i>
+              <p>Email: mphatsomatandika@gmail.com</p>
+          </a>
+      </div>
+  </div>
+</section>
+
+    
+
+    <script>
+        var navlinks = document.getElementById("navlinks");
+
+        function showMenu(){
+            navlinks.style.right = "0";
+            document.addEventListener("click", closeMenuOutside);
+        }
+
+        function hideMenu(){
+            navlinks.style.right = "-200px";
+            document.removeEventListener("click", closeMenuOutside);
+        }
+
+        function closeMenuOutside(event){
+            if (!event.target.closest(".nav-links") && !event.target.closest(".fa-bars")) {
+                hideMenu();
+            }
+        }
+    </script>
+    <footer>
+      <p>&copy; 2023 MATANDIKA & COMPANY LAWYERS COMMISIONERS OF OATHS CONVENERS. All rights reserved.</p>
+    </footer>
+</body>
+</html>

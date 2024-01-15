@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MATANDIKA & COMPANY LAWYERS COMMISIONERS OF OATHS CONVENERS</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+   
+  </head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src=""></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html.html">About Us</a></li>
+                    <li><a href="our-services.html.html">Our Services</a></li>
+                    <li><a href="our location.html.html">Our Location</a></li> 
+                    <li><a href="contact us.html.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+      <h1>Our Services</h1>
+    </section>
+ 
+
+<!-------Our Services------>
+
+<section class="services">
+  <div class="container">
+    
+    <div class="service">
+      <h3>Comprehensive Legal Solutions</h3>
+      <p>At Matandika & Company Lawyers Commissioners of Oaths Convener, we provide a wide range of comprehensive legal solutions to cater to the diverse needs of our clients...</p>
+    </div>
+    <div class="service">
+      <h3>Corporate Law</h3>
+      <p>Our experienced team of corporate lawyers is well-versed in handling complex corporate matters. We provide legal guidance and support in areas such as business formation, contract drafting and negotiation, mergers and acquisitions, corporate governance, compliance, and more...</p>
+    </div>
+    <!-- Repeat the above structure for each service -->
+    <div class="service">
+      <h3>Civil Litigation</h3>
+      <p>When disputes arise, our skilled litigators are ready to advocate for your rights. We handle civil litigation cases with professionalism and dedication, representing our clients in court proceedings, negotiations, and alternative dispute resolution methods.</p>
+    </div>
+    <div class="service">
+      <h3>Employment Law</h3>
+      <p> Our firm offers comprehensive employment law services to both employers and employees. We assist with matters such as employment contracts, workplace policies, discrimination claims, wrongful termination, and employment litigation.</p>
+    </div>
+    <div class="service">
+      <h3>Family Law</h3>
+      <p> Matandika & Company Lawyers Commissioners of Oaths Convener understands the sensitive nature of family law matters. We provide compassionate and strategic legal representation in areas such as divorce, child custody, spousal support, adoption, and prenuptial agreements.</p>
+    </div>
+    <div class="service">
+      <h3>Real Estate Law</h3>
+      <p>Whether you are buying, selling, or leasing property, our real estate law services are designed to protect your interests. We handle matters such as property transactions, title searches, land use and zoning, landlord-tenant disputes, and real estate litigation.</p>
+    </div>
+    <div class="service">
+      <h3>Wills and Estates</h3>
+      <p>Planning for the future is essential. Our team assists clients in creating wills, trusts, and estate plans that ensure their assets are distributed according to their wishes. We also handle probate and estate administration matters.</p>
+    </div>
+    <div class="service">
+      <h3>Intellectual Property</h3>
+      <p>Protecting your intellectual property rights is crucial in today's competitive landscape. We offer guidance on trademarks, copyrights, patents, and trade secrets, helping clients safeguard their valuable creations and innovations.</p>
+    </div>
+    <div class="service">
+      <h3>Alternative Dispute Resolution</h3>
+      <p> Resolving disputes outside of the courtroom can often be a faster and more cost-effective approach. Our firm has experience in mediation, arbitration, and negotiation, assisting clients in reaching mutually beneficial resolutions.</p>
+    </div>
+    <div class="service">
+      <h3>Legal Consultations</h3>
+      <p>We offer initial consultations to understand your legal needs and provide guidance on the appropriate course of action. Our attorneys take the time to listen, evaluate your situation, and offer personalized legal advice tailored to your specific circumstances.</p>
+    </div>
+  </div>
+</section>
+
+<!---social media section--->
+
+<section class="social-icons">
+    <h2>About Us</h2>
+    <div class="low">
+      <div class="about-col">
+
+        <!-- Your existing content -->
+
+      </div>
+  
+      <div class="about-col">
+
+        <!-- Your existing content -->
+        
+        <div class="owner-name">Mphatso Matandika</div>
+        <div class="social-links">
+            <a href="https://api.whatsapp.com/send?phone=265992031955" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.facebook.com/mphatso.matandika.1" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.twitter.com/MphatsoMatandika" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+          </div>
+          
+        <p>Connect with Mphatso Matandika on social media for the latest updates, insights, and more.</p>
+      </div>
+    </div>
+  </section>
+  
+
+
+
+
+
+
+    <script>
+        var navlinks = document.getElementById("navlinks");
+
+        function showMenu(){
+            navlinks.style.right = "0";
+            document.addEventListener("click", closeMenuOutside);
+        }
+
+        function hideMenu(){
+            navlinks.style.right = "-200px";
+            document.removeEventListener("click", closeMenuOutside);
+        }
+
+        function closeMenuOutside(event){
+            if (!event.target.closest(".nav-links") && !event.target.closest(".fa-bars")) {
+                hideMenu();
+            }
+        }
+    </script>
+    <footer>
+      <p>&copy; 2023 MATANDIKA & COMPANY LAWYERS COMMISIONERS OF OATHS CONVENERS. All rights reserved.</p>
+    </footer>
+</body>
+</html>
